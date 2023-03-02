@@ -1,31 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Timer & Stop-watch</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-
-<body>
-  <div class="container">
-    <div class="box" id="box1">
-      <div class="img">
-        <a href="timer/index.html">
-          <h1>Timer</h1>
-        </a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Timer</title>
+    <link
+    href="https://fonts.google.com/specimen/Oswald?preview.size=46"
+    rel="stylesheet"
+    />
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <div class="box">
+      <div id="disp">Timer</div>
+      <form action="#">
+        <input
+          type="number"
+          id="hour"
+          placeholder="Hour"
+          autocomplete="off"
+          value=""
+        />
+        <input
+          type="number"
+          id="minute"
+          placeholder="MINUTES"
+          autocomplete="off"
+          value=""
+        />
+        <input
+          type="number"
+          id="second"
+          placeholder="SECOND"
+          autocomplete="off "
+          value=""
+        />
+      </form>
+      <div class="btn">
+        <button id="start">START</button>
+        <button id="reset">RESET</button>
       </div>
     </div>
-    <div class="box" id="box2">
-      <div class="img">
-        <a href="stopwatch/index.html">
-          <h1>Stopwatch</h1>
-        </a>
-      </div>
-    </div>
-  </div>
-</body>
-
+    <script src="main.js"></script>
+  </body>
 </html>
